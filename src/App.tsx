@@ -22,20 +22,20 @@ const Section: React.FC<SectionProps> = ({ title, children }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mb-8 bg-neutral-100 rounded-xl overflow-hidden shadow-lg"
+      className="mb-8 bg-neutral-800 rounded-xl overflow-hidden shadow-lg"
     >
       <motion.button
         className="w-full text-left flex items-center justify-between py-4 px-6"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-xl font-mono text-neutral-600 font-semibold">
+        <span className="text-xl font-mono text-neutral-100 font-semibold">
           {title}
         </span>
         <motion.div
           animate={{ rotate: isOpen ? 90 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <ChevronRight className="text-neutral-600" />
+          <ChevronRight className="text-neutral-100" />
         </motion.div>
       </motion.button>
       <AnimatePresence>
@@ -46,7 +46,9 @@ const Section: React.FC<SectionProps> = ({ title, children }) => {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="p-6 bg-white backdrop-blur-sm">{children}</div>
+            <div className="p-6 bg-neutral-900 text-neutral-300">
+              {children}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -69,7 +71,7 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => (
 
 const App: React.FC = () => {
   return (
-    <div className="h-screen overflow-y-auto no-scrollbar bg-white text-black font-mono">
+    <div className="h-screen overflow-y-auto no-scrollbar bg-neutral-900 text-neutral-300 font-mono">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto" id="content">
           <motion.div
@@ -79,56 +81,57 @@ const App: React.FC = () => {
             className="mb-16 text-center"
           >
             <motion.div
-              className="w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden"
+              className=" w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
             >
               <img
                 src="/me.gif"
-                alt="Biswarup Sen"
+                alt="Satish Rathod"
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <h1 className="text-5xl font-bold mb-4 text-neutral-600">
-              Biswarup Sen
+            <h1 className="text-5xl font-bold mb-4 text-neutral-100">
+              Satish Rathod
             </h1>
-            <p className="text-2xl text-neutral-600">
-              Backend | System Design | DevOps
+            <p className="text-2xl text-neutral-400">
+              Full-Stack Developer | AI & System Design Enthusiast
             </p>
           </motion.div>
 
           <Section title="About Me">
             <p className="leading-relaxed">
-              I'm a backend developer with expertise in DevOps, system design,
-              and the MERN stack. I am passionate about building tech.
+              I am a passionate full-stack developer with a focus on AI, system
+              design, and MERN stack technologies. Currently pursuing dual degrees 
+              and working on cutting-edge projects.
             </p>
           </Section>
 
           <Section title="Experience">
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Dukaan
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Bot9
                 </h3>
-                <p className="text-sm text-neutral-600 mb-4">
-                  Backend Engineer | Current Role since July 2024
+                <p className="text-sm text-neutral-400 mb-4">
+                  Full-Stack Intern | Aug. 2024 – Present
+                </p>
+                <p className="text-neutral-400">
+                  Focused on back-end development, working with LLMs and
+                  optimizing system performance with AI-driven features.
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Webkites
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Scaler School of Technology
                 </h3>
-                <p className="text-sm text-neutral-600 mb-4">
-                  Fullstack Developer | June 2024 - July 2024
+                <p className="text-sm text-neutral-400 mb-4">
+                  Project Intern | Mar. 2024 – May 2024
                 </p>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Algabay AI
-                </h3>
-                <p className="text-sm text-neutral-600 mb-4">
-                  Founder & Tech Lead | April 2023 - April 2024
+                <p className="text-neutral-400">
+                  Developed a local streaming server using Mediasoup to enhance
+                  classroom experiences.
                 </p>
               </motion.div>
             </div>
@@ -137,52 +140,27 @@ const App: React.FC = () => {
           <Section title="Projects">
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Kribble{" "}
-                  <span className="text-neutral-4\600 font-light">
-                    200+ users
-                  </span>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Simply Invest
                 </h3>
-                <p className="mb-4 text-neutral-600">
-                  A social platform for college students to share and stream
-                  video and images. The social platform has a monolithic backend
-                  that originally used Hono.js and Cloudflare but later switched
-                  to Express.js and AWS for better cost efficiency. Media files
-                  are stored in S3 for scalable storage, while CloudFront helps
-                  deliver these files quickly. Switching to Express.js and AWS
-                  improved performance and reduced costs by taking advantage of
-                  AWS's powerful infrastructure.
+                <p className="text-sm text-neutral-400 mb-4">
+                  Full-stack AI Trading Bot | July 2024
                 </p>
-                <a
-                  onClick={() => window.open("https://www.kribble.net")}
-                  className="text-blue-600 cursor-pointer"
-                >
-                  View Project →
-                </a>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Vipanie
-                </h3>
-                <p className="mb-4 text-neutral-600">
-                  Vipanie is a platform that enables any business to
-                  effortlessly launch their online store. Built with React,
-                  Node.js, Postgres, and S3 with CloudFront, businesses can add
-                  their products, and Vipanie generates a webstore for them,
-                  allowing customers to place orders. It also includes a
-                  dashboard to manage orders efficiently.
+                <p className="text-neutral-400">
+                  Built a trading bot using OpenAI APIs to help users make
+                  smart decisions through sentiment analysis.
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
-                  Centralized Exchange Server
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  AI Receptionist
                 </h3>
-                <p className="mb-4 text-neutral-600">
-                  The centralized exchange server is built using Node.js for
-                  efficient backend handling, PostgreSQL for reliable
-                  transaction management, and Redis for fast data retrieval.
-                  This setup ensures high availability, low latency, and secure
-                  transactions.
+                <p className="text-sm text-neutral-400 mb-4">
+                  Hotel Booking Chatbot | July 2024
+                </p>
+                <p className="text-neutral-400">
+                  Developed an AI-powered receptionist for hotel bookings using
+                  OpenAI and natural language processing.
                 </p>
               </motion.div>
             </div>
@@ -194,19 +172,19 @@ const App: React.FC = () => {
               <SkillBadge skill="Node.js" />
               <SkillBadge skill="Express.js" />
               <SkillBadge skill="MongoDB" />
-              <SkillBadge skill="PostgreSQL" />
-              <SkillBadge skill="AWS" />
+              <SkillBadge skill="MySQL" />
               <SkillBadge skill="Docker" />
-              <SkillBadge skill="Kubernetes" />
               <SkillBadge skill="Git" />
-              <SkillBadge skill="CI/CD" />
-              <SkillBadge skill="Serverless" />
-              <SkillBadge skill="Redis" />
-              <SkillBadge skill="System Design" />
-              <SkillBadge skill="WebRTC" />
+              <SkillBadge skill="Tailwind CSS" />
+              <SkillBadge skill="Python" />
+              <SkillBadge skill="JavaScript" />
+              <SkillBadge skill="Java" />
+              <SkillBadge skill="Kotlin" />
+              <SkillBadge skill="Linux" />
             </div>
           </Section>
         </div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -216,48 +194,40 @@ const App: React.FC = () => {
           <div className="flex justify-center space-x-8 mb-8">
             <motion.a
               whileHover={{ scale: 1.2, rotate: 5 }}
-              href="mailto:biswarupsen.work@gmail.com"
-              className="text-neutral-600 hover:text-neutral-400 transition-colors"
+              href="mailto:satish.rathod.ov@gmail.com"
+              className="text-neutral-400 hover:text-neutral-300 transition-colors"
             >
               <Mail size={28} />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.2, rotate: -5 }}
-              href="https://github.com/bsen/"
+              href="https://github.com/satish-rathod"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
+              className="text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer"
             >
               <Github size={28} />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.2, rotate: 5 }}
-              href="https://www.linkedin.com/in/biswarup-sen/"
+              href="https://www.linkedin.com/in/satish-rathod-2a583127ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
+              className="text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer"
             >
               <Linkedin size={28} />
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.2, rotate: -5 }}
-              href="https://x.com/biswasys"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
-            >
-              <Twitter size={28} />
-            </motion.a>
           </div>
         </motion.div>
-        <div className="hidden  justify-center">
+
+        <div className="hidden justify-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {
-              window.open("/biswarupsen-resume.pdf");
+              window.open("/satish-rathod-resume.pdf");
             }}
-            className="flex  px-6 py-3 bg-neutral-100 text-black rounded-full shadow-lg items-center justify-center"
+            className="flex px-6 py-3 bg-neutral-700 text-neutral-100 rounded-full shadow-lg items-center justify-center"
           >
             <Download size={20} className="mr-2" />
             Download Resume
@@ -265,8 +235,8 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <footer className="py-8 text-center text-neutral-400">
-        <p>© {new Date().getFullYear()} bsen.tech</p>
+      <footer className="py-8 text-center text-neutral-500">
+        <p>© {new Date().getFullYear()} Satish Rathod</p>
       </footer>
     </div>
   );
