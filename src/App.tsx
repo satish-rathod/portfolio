@@ -5,7 +5,6 @@ import {
   Mail,
   Github,
   ChevronRight,
-  Twitter,
   Download,
 } from "lucide-react";
 
