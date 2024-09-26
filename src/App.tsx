@@ -94,16 +94,30 @@ const App: React.FC = () => {
             <h1 className="text-5xl font-bold mb-4 text-neutral-100">
               Satish Rathod
             </h1>
-            <p className="text-2xl text-neutral-400">
+            <p className="text-2xl text-neutral-400 mb-4">
               Full-Stack Developer | AI & System Design Enthusiast
             </p>
+
+          <div className="flex justify-center items-center">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              window.open("https://drive.google.com/file/d/1FvPzfuEOssrv-X7luv-EiSMu9yF9palM/view?usp=drive_link");
+            }}
+            className="flex px-6 py-3 bg-neutral-700 text-neutral-100 rounded-full shadow-lg items-center justify-center" 
+          >
+            <Download size={20} className="mr-2" />
+            Download Resume
+          </motion.button>
+        </div>
           </motion.div>
 
           <Section title="About Me">
             <p className="leading-relaxed">
-              I am a passionate full-stack developer with a focus on AI, system
-              design, and MERN stack technologies. Currently pursuing dual degrees 
-              and working on cutting-edge projects.
+              I am full-stack developer with a focus on AI, system
+              design, and MERN stack technologies. Currently pursuing dual degrees in CS
+              and working on some cool projects.
             </p>
           </Section>
 
@@ -218,20 +232,6 @@ const App: React.FC = () => {
             </motion.a>
           </div>
         </motion.div>
-
-        <div className="hidden justify-center">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              window.open("/satish-rathod-resume.pdf");
-            }}
-            className="flex px-6 py-3 bg-neutral-700 text-neutral-100 rounded-full shadow-lg items-center justify-center"
-          >
-            <Download size={20} className="mr-2" />
-            Download Resume
-          </motion.button>
-        </div>
       </div>
 
       <footer className="py-8 text-center text-neutral-500">
