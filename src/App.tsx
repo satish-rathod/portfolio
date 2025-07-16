@@ -6,6 +6,8 @@ import {
   Github,
   ChevronRight,
   Download,
+  Award,
+  Code,
 } from "lucide-react";
 
 interface SectionProps {
@@ -95,7 +97,7 @@ const App: React.FC = () => {
               Satish Rathod
             </h1>
             <p className="text-2xl text-neutral-400 mb-4">
-              Full-Stack Developer | AI & System Design Enthusiast
+              AI/ML Engineer | Full-Stack Developer | Edge Computing Enthusiast
             </p>
 
           <div className="flex justify-center items-center">
@@ -114,38 +116,87 @@ const App: React.FC = () => {
           </motion.div>
 
           <Section title="About Me">
-            <p className="leading-relaxed">
-              I am full-stack developer with a focus on AI, system
-              design, and MERN stack technologies. Currently pursuing dual degrees in CS
-              and working on some cool projects.
+            <p className="leading-relaxed mb-4">
+              I am an AI/ML Engineer and Full-Stack Developer with extensive experience in edge computing, 
+              natural language processing, and system design. Currently pursuing dual degrees in Computer Science 
+              from Scaler School of Technology and BITS Pilani, I specialize in building scalable AI pipelines 
+              and developing innovative solutions using cutting-edge technologies.
             </p>
+            <p className="leading-relaxed">
+              My expertise spans from deploying AI models on edge devices like NVIDIA Jetson to building 
+              full-stack web applications with modern frameworks. I'm passionate about leveraging AI to solve 
+              real-world problems and optimizing system performance for production environments.
+            </p>
+          </Section>
+
+          <Section title="Education">
+            <div className="space-y-6">
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Scaler School Of Technology
+                </h3>
+                <p className="text-sm text-neutral-400 mb-2">
+                  Bachelor + Masters of Science in Computer Science
+                </p>
+                <p className="text-sm text-neutral-400 mb-2">
+                  July 2023 – July 2027 | CGR: 8.1
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Birla Institute Of Technology And Science (BITS Pilani)
+                </h3>
+                <p className="text-sm text-neutral-400 mb-2">
+                  Bachelor of Science in Computer Science
+                </p>
+                <p className="text-sm text-neutral-400 mb-2">
+                  July 2023 – July 2026 | CGPA: 8.9
+                </p>
+              </motion.div>
+            </div>
           </Section>
 
           <Section title="Experience">
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  Bot9
+                  AI-ML Intern | 1Pharmacy Networks
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
-                  Full-Stack Intern | Aug. 2024 – Present
+                  On-site | Nov 2024 – May 2025
                 </p>
-                <p className="text-neutral-400">
-                  Focused on back-end development, working with LLMs and
-                  optimizing system performance with AI-driven features.
-                </p>
+                <ul className="text-neutral-400 space-y-2">
+                  <li>• Designed and implemented an AI/ML pipeline with motion-triggered alerts and cloud-edge sync using NVIDIA Jetson and cloud services</li>
+                  <li>• Built an audio processing system with Whisper (OpenAI) and NVIDIA Riva on Jetson; optimized pipelines for transcription and NLP</li>
+                  <li>• Deployed RESTful AI services with Docker; managed infrastructure for real-time monitoring and inference on Jetson devices</li>
+                  <li>• Configured a local VPN with Tailscale for secure remote access and device management</li>
+                  <li>• Worked on an NLP pipeline with Hugging Face and Pinecone for advanced audio transcription processing</li>
+                  <li>• Contributed to system design, model experiments, and deployment as part of a cross-functional team</li>
+                </ul>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  Scaler School of Technology
+                  Full-Stack Intern | Bot9, Dukaan®
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
-                  Project Intern | Mar. 2024 – May 2024
+                  On-site | Aug 2024 – Oct 2024
                 </p>
-                <p className="text-neutral-400">
-                  Developed a local streaming server using Mediasoup to enhance
-                  classroom experiences.
+                <ul className="text-neutral-400 space-y-2">
+                  <li>• Back-end web development with large language models (LLMs)</li>
+                  <li>• Optimized system performance and implemented AI-driven features with the team</li>
+                </ul>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  Project Intern | Scaler
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  Remote | Mar 2024 – May 2024
                 </p>
+                <ul className="text-neutral-400 space-y-2">
+                  <li>• Developed a local streaming server with Mediasoup for video/audio streams across multiple devices</li>
+                  <li>• Improved classroom learning by reducing bandwidth use and minimizing lag</li>
+                </ul>
               </motion.div>
             </div>
           </Section>
@@ -154,46 +205,150 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  Simply Invest
+                  Edge-AI Audio Analysis System
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
-                  Full-stack AI Trading Bot | July 2024
+                  Jetson, Whisper, Hugging Face, Docker | 2024
                 </p>
                 <p className="text-neutral-400">
-                  Built a trading bot using OpenAI APIs to help users make
-                  smart decisions through sentiment analysis.
+                  Developed an edge-cloud AI pipeline for real-time audio processing and NLP with REST APIs deployed in Docker. 
+                  Implemented advanced audio transcription and analysis using NVIDIA Jetson for edge computing.
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  AI Receptionist
+                  Simply Invest - AI Trading Bot
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
-                  Hotel Booking Chatbot | July 2024
+                  MERN stack, OpenAI APIs | 2024
                 </p>
                 <p className="text-neutral-400">
-                  Developed an AI-powered receptionist for hotel bookings using
-                  OpenAI and natural language processing.
+                  Built a trading bot using OpenAI APIs to help users make smart trading decisions through sentiment analysis. 
+                  Implemented real-time market data processing and intelligent trading recommendations.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  AI Receptionist (AI Chat-Bot)
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  MERN, SQLite, OpenAI APIs | 2024
+                </p>
+                <p className="text-neutral-400">
+                  Developed an AI-powered receptionist for hotel room booking through natural language conversations. 
+                  Integrated OpenAI APIs for intelligent conversation handling and booking management.
                 </p>
               </motion.div>
             </div>
           </Section>
 
-          <Section title="Skills">
+          <Section title="Technical Skills">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Programming Languages</h4>
+                <div className="flex flex-wrap -m-2">
+                  <SkillBadge skill="Python" />
+                  <SkillBadge skill="Java" />
+                  <SkillBadge skill="C++" />
+                  <SkillBadge skill="JavaScript" />
+                  <SkillBadge skill="HTML/CSS" />
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">AI/ML & Data Science</h4>
+                <div className="flex flex-wrap -m-2">
+                  <SkillBadge skill="PyTorch" />
+                  <SkillBadge skill="CUDA" />
+                  <SkillBadge skill="Whisper" />
+                  <SkillBadge skill="Hugging Face" />
+                  <SkillBadge skill="NVIDIA Riva" />
+                  <SkillBadge skill="Scikit-learn" />
+                  <SkillBadge skill="OpenAI API" />
+                  <SkillBadge skill="Pinecone" />
+                  <SkillBadge skill="Pandas" />
+                  <SkillBadge skill="NumPy" />
+                  <SkillBadge skill="Seaborn" />
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Frameworks & Tools</h4>
+                <div className="flex flex-wrap -m-2">
+                  <SkillBadge skill="Docker" />
+                  <SkillBadge skill="REST APIs" />
+                  <SkillBadge skill="Linux" />
+                  <SkillBadge skill="Git" />
+                  <SkillBadge skill="React" />
+                  <SkillBadge skill="Express.js" />
+                  <SkillBadge skill="Node.js" />
+                  <SkillBadge skill="MongoDB" />
+                  <SkillBadge skill="MySQL" />
+                  <SkillBadge skill="Tailwind CSS" />
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Developer Tools</h4>
+                <div className="flex flex-wrap -m-2">
+                  <SkillBadge skill="VS Code" />
+                  <SkillBadge skill="JetBrains IDE" />
+                  <SkillBadge skill="Figma" />
+                  <SkillBadge skill="GitHub" />
+                </div>
+              </div>
+            </div>
+          </Section>
+
+          <Section title="Competitive Programming">
+            <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
+                  <div className="flex items-center mb-2">
+                    <Award className="text-yellow-400 mr-2" size={20} />
+                    <h4 className="font-semibold text-neutral-100">Codeforces</h4>
+                  </div>
+                  <p className="text-neutral-400">Max Rating: 1375</p>
+                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
+                  <div className="flex items-center mb-2">
+                    <Award className="text-yellow-400 mr-2" size={20} />
+                    <h4 className="font-semibold text-neutral-100">CodeChef</h4>
+                  </div>
+                  <p className="text-neutral-400">Max Rating: 1703</p>
+                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
+                  <div className="flex items-center mb-2">
+                    <Award className="text-yellow-400 mr-2" size={20} />
+                    <h4 className="font-semibold text-neutral-100">AtCoder</h4>
+                  </div>
+                  <p className="text-neutral-400">Max Rating: 529</p>
+                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
+                  <div className="flex items-center mb-2">
+                    <Code className="text-green-400 mr-2" size={20} />
+                    <h4 className="font-semibold text-neutral-100">LeetCode</h4>
+                  </div>
+                  <p className="text-neutral-400">Max Rating: 1643</p>
+                  <p className="text-neutral-400">290+ Problems Solved</p>
+                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                </motion.div>
+              </div>
+            </div>
+          </Section>
+
+          <Section title="Relevant Coursework">
             <div className="flex flex-wrap -m-2">
-              <SkillBadge skill="React" />
-              <SkillBadge skill="Node.js" />
-              <SkillBadge skill="Express.js" />
-              <SkillBadge skill="MongoDB" />
-              <SkillBadge skill="MySQL" />
-              <SkillBadge skill="Docker" />
-              <SkillBadge skill="Git" />
-              <SkillBadge skill="Tailwind CSS" />
-              <SkillBadge skill="Python" />
-              <SkillBadge skill="JavaScript" />
-              <SkillBadge skill="Java" />
-              <SkillBadge skill="Kotlin" />
-              <SkillBadge skill="Linux" />
+              <SkillBadge skill="Machine Learning" />
+              <SkillBadge skill="Natural Language Processing" />
+              <SkillBadge skill="Data Structures" />
+              <SkillBadge skill="Shell Scripting" />
+              <SkillBadge skill="Web Development" />
+              <SkillBadge skill="Linear Algebra" />
+              <SkillBadge skill="Discrete Mathematics" />
+              <SkillBadge skill="Object-Oriented Programming" />
+              <SkillBadge skill="Probability and Statistics" />
+              <SkillBadge skill="Business Problem Solving" />
             </div>
           </Section>
         </div>
