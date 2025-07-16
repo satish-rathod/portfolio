@@ -331,7 +331,7 @@ const App: React.FC = () => {
                   </div>
                   <p className="text-neutral-400">Max Rating: 1643</p>
                   <p className="text-neutral-400">290+ Problems Solved</p>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                  <a href="https://leetcode.com/u/satrat_05/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
                 </motion.div>
               </div>
             </div>
