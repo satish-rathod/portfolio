@@ -105,7 +105,7 @@ const App: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {
-              window.open("https://drive.google.com/file/d/1FvPzfuEOssrv-X7luv-EiSMu9yF9palM/view?usp=drive_link");
+              window.open("https://drive.google.com/file/d/1e75BIylJQGn1eBchP2KS6KZntX1uC9E7/view?usp=sharing");
             }}
             className="flex px-6 py-3 bg-neutral-700 text-neutral-100 rounded-full shadow-lg items-center justify-center" 
           >
