@@ -322,7 +322,7 @@ const App: React.FC = () => {
                     <h4 className="font-semibold text-neutral-100">AtCoder</h4>
                   </div>
                   <p className="text-neutral-400">Max Rating: 529</p>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                  <a href="https://atcoder.jp/users/Satish_" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
                   <div className="flex items-center mb-2">
