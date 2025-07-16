@@ -314,7 +314,7 @@ const App: React.FC = () => {
                     <h4 className="font-semibold text-neutral-100">CodeChef</h4>
                   </div>
                   <p className="text-neutral-400">Max Rating: 1703</p>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
+                  <a href="https://www.codechef.com/users/satrat_ov" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">View Profile</a>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.02 }} className="bg-neutral-800 p-4 rounded-lg">
                   <div className="flex items-center mb-2">
