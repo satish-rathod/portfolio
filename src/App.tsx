@@ -378,7 +378,7 @@ const App: React.FC = () => {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.2, rotate: 5 }}
-              href="https://www.linkedin.com/in/satish-rathod-2a583127ai/"
+              href="https://www.linkedin.com/in/satish-rathod-2a583127a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer"
