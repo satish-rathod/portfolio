@@ -97,7 +97,7 @@ const App: React.FC = () => {
               Satish Rathod
             </h1>
             <p className="text-2xl text-neutral-400 mb-4">
-              AI/ML Engineer | Full-Stack Developer | Edge Computing Enthusiast
+              Software Engineer | Full-Stack Developer | AI/ML
             </p>
 
           <div className="flex justify-center items-center">
@@ -117,15 +117,13 @@ const App: React.FC = () => {
 
           <Section title="About Me">
             <p className="leading-relaxed mb-4">
-              I am an AI/ML Engineer and Full-Stack Developer with extensive experience in edge computing, 
-              natural language processing, and system design. Currently pursuing dual degrees in Computer Science 
-              from Scaler School of Technology and BITS Pilani, I specialize in building scalable AI pipelines 
-              and developing innovative solutions using cutting-edge technologies.
+              Software engineer with experience across full-stack development, AI/ML pipelines, and automation systems.
+              Currently an SWE Intern at Trackaroo building a multi-tenant automotive dealer ERP, and pursuing dual
+              degrees in Computer Science from Scaler School of Technology and BITS Pilani.
             </p>
             <p className="leading-relaxed">
-              My expertise spans from deploying AI models on edge devices like NVIDIA Jetson to building 
-              full-stack web applications with modern frameworks. I'm passionate about leveraging AI to solve 
-              real-world problems and optimizing system performance for production environments.
+              I build things that work — from voice interfaces and browser extensions to trading platforms and
+              edge-cloud AI systems. I care about clean architecture, reliable infrastructure, and shipping fast.
             </p>
           </Section>
 
@@ -150,7 +148,7 @@ const App: React.FC = () => {
                   Bachelor of Science in Computer Science
                 </p>
                 <p className="text-sm text-neutral-400 mb-2">
-                  July 2023 – July 2026 | CGPA: 8.9
+                  July 2023 – July 2026 | CGPA: 7.7
                 </p>
               </motion.div>
             </div>
@@ -166,8 +164,9 @@ const App: React.FC = () => {
                   Remote | Feb 2026 – Present
                 </p>
                 <ul className="text-neutral-400 space-y-2">
-                  <li>• Building a multi-tenant automotive dealer ERP platform with Spring Boot, React + TypeScript, and PostgreSQL</li>
-                  <li>• Developing automation bots for vehicle registration (Playwright + FastAPI + Celery) and insurance processing (Puppeteer + RabbitMQ + OCR)</li>
+                  <li>• Building a multi-tenant automotive dealer ERP with Spring Boot, React + TypeScript, and PostgreSQL</li>
+                  <li>• Developing automation bots for vehicle registration (Playwright, Celery) and insurance processing (Puppeteer, RabbitMQ, OCR)</li>
+                  <li>• Implemented background workers, job queues, and a voice-command interface for hands-free dealer operations</li>
                 </ul>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
@@ -178,12 +177,10 @@ const App: React.FC = () => {
                   On-site | Nov 2024 – May 2025
                 </p>
                 <ul className="text-neutral-400 space-y-2">
-                  <li>• Designed and implemented an AI/ML pipeline with motion-triggered alerts and cloud-edge sync using NVIDIA Jetson and cloud services</li>
-                  <li>• Built an audio processing system with Whisper (OpenAI) and NVIDIA Riva on Jetson; optimized pipelines for transcription and NLP</li>
-                  <li>• Deployed RESTful AI services with Docker; managed infrastructure for real-time monitoring and inference on Jetson devices</li>
-                  <li>• Configured a local VPN with Tailscale for secure remote access and device management</li>
-                  <li>• Worked on an NLP pipeline with Hugging Face and Pinecone for advanced audio transcription processing</li>
-                  <li>• Contributed to system design, model experiments, and deployment as part of a cross-functional team</li>
+                  <li>• Built edge-cloud AI pipelines on NVIDIA Jetson with Whisper and Riva for real-time audio transcription and NLP</li>
+                  <li>• Deployed Dockerized inference services with REST APIs for real-time monitoring across distributed Jetson devices</li>
+                  <li>• Set up Tailscale VPN for secure remote access and firmware management across edge devices</li>
+                  <li>• Developed an NLP pipeline with Hugging Face and Pinecone for audio transcription analysis and text search</li>
                 </ul>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
@@ -194,20 +191,8 @@ const App: React.FC = () => {
                   On-site | Aug 2024 – Oct 2024
                 </p>
                 <ul className="text-neutral-400 space-y-2">
-                  <li>• Back-end web development with large language models (LLMs)</li>
-                  <li>• Optimized system performance and implemented AI-driven features with the team</li>
-                </ul>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-100">
-                  Project Intern | Scaler
-                </h3>
-                <p className="text-sm text-neutral-400 mb-4">
-                  Remote | Mar 2024 – May 2024
-                </p>
-                <ul className="text-neutral-400 space-y-2">
-                  <li>• Developed a local streaming server with Mediasoup for video/audio streams across multiple devices</li>
-                  <li>• Improved classroom learning by reducing bandwidth use and minimizing lag</li>
+                  <li>• Back-end development with LLMs; optimized system performance and shipped AI-driven features</li>
+                  <li>• Built and integrated conversational AI chatbot flows for merchant-facing products</li>
                 </ul>
               </motion.div>
             </div>
@@ -266,56 +251,47 @@ const App: React.FC = () => {
           <Section title="Technical Skills">
             <div className="space-y-6">
               <div>
-                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Programming Languages</h4>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Languages</h4>
                 <div className="flex flex-wrap -m-2">
                   <SkillBadge skill="Python" />
-                  <SkillBadge skill="TypeScript" />
                   <SkillBadge skill="Java" />
-                  <SkillBadge skill="C++" />
+                  <SkillBadge skill="TypeScript" />
                   <SkillBadge skill="JavaScript" />
-                  <SkillBadge skill="HTML/CSS" />
+                  <SkillBadge skill="SQL" />
                 </div>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-neutral-100 mb-3">AI/ML & Data Science</h4>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Frameworks</h4>
                 <div className="flex flex-wrap -m-2">
-                  <SkillBadge skill="PyTorch" />
-                  <SkillBadge skill="CUDA" />
-                  <SkillBadge skill="Whisper" />
-                  <SkillBadge skill="Hugging Face" />
-                  <SkillBadge skill="NVIDIA Riva" />
-                  <SkillBadge skill="Scikit-learn" />
-                  <SkillBadge skill="OpenAI API" />
-                  <SkillBadge skill="Pinecone" />
-                  <SkillBadge skill="Pandas" />
-                  <SkillBadge skill="NumPy" />
-                  <SkillBadge skill="Seaborn" />
-                </div>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Frameworks & Tools</h4>
-                <div className="flex flex-wrap -m-2">
-                  <SkillBadge skill="Docker" />
-                  <SkillBadge skill="REST APIs" />
-                  <SkillBadge skill="WebSocket" />
-                  <SkillBadge skill="Linux" />
-                  <SkillBadge skill="Git" />
                   <SkillBadge skill="React" />
+                  <SkillBadge skill="Spring Boot" />
                   <SkillBadge skill="FastAPI" />
-                  <SkillBadge skill="Express.js" />
                   <SkillBadge skill="Node.js" />
-                  <SkillBadge skill="MongoDB" />
-                  <SkillBadge skill="MySQL" />
+                  <SkillBadge skill="Express.js" />
                   <SkillBadge skill="Tailwind CSS" />
                 </div>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Developer Tools</h4>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">Databases & Infrastructure</h4>
                 <div className="flex flex-wrap -m-2">
-                  <SkillBadge skill="VS Code" />
-                  <SkillBadge skill="JetBrains IDE" />
-                  <SkillBadge skill="Figma" />
-                  <SkillBadge skill="GitHub" />
+                  <SkillBadge skill="PostgreSQL" />
+                  <SkillBadge skill="MongoDB" />
+                  <SkillBadge skill="Redis" />
+                  <SkillBadge skill="Docker" />
+                  <SkillBadge skill="Linux" />
+                  <SkillBadge skill="Git" />
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-neutral-100 mb-3">AI & Automation</h4>
+                <div className="flex flex-wrap -m-2">
+                  <SkillBadge skill="OpenAI API" />
+                  <SkillBadge skill="Whisper" />
+                  <SkillBadge skill="Hugging Face" />
+                  <SkillBadge skill="Playwright" />
+                  <SkillBadge skill="Puppeteer" />
+                  <SkillBadge skill="Celery" />
+                  <SkillBadge skill="RabbitMQ" />
                 </div>
               </div>
             </div>
@@ -365,14 +341,19 @@ const App: React.FC = () => {
             <div className="flex flex-wrap -m-2">
               <SkillBadge skill="Machine Learning" />
               <SkillBadge skill="Natural Language Processing" />
+              <SkillBadge skill="Computer Vision" />
+              <SkillBadge skill="AI Engineering" />
+              <SkillBadge skill="Data Engineering" />
+              <SkillBadge skill="HLD" />
+              <SkillBadge skill="LLD" />
               <SkillBadge skill="Data Structures" />
-              <SkillBadge skill="Shell Scripting" />
+              <SkillBadge skill="OOP" />
+              <SkillBadge skill="DevOps" />
               <SkillBadge skill="Web Development" />
+              <SkillBadge skill="Shell Scripting" />
               <SkillBadge skill="Linear Algebra" />
               <SkillBadge skill="Discrete Mathematics" />
-              <SkillBadge skill="Object-Oriented Programming" />
               <SkillBadge skill="Probability and Statistics" />
-              <SkillBadge skill="Business Problem Solving" />
             </div>
           </Section>
         </div>
