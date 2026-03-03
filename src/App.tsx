@@ -247,18 +247,7 @@ const App: React.FC = () => {
                   and real-time portfolio tracking. Uses OpenAI for market insights and OpenBB for financial data.
                 </p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-100">
-                  Edge-AI Audio Analysis System
-                </h3>
-                <p className="text-sm text-neutral-400 mb-4">
-                  Jetson, Whisper, Hugging Face, Docker | 2024
-                </p>
-                <p className="text-neutral-400">
-                  An edge-cloud AI pipeline for real-time audio processing and NLP with REST APIs deployed in Docker.
-                  Implemented audio transcription and analysis using NVIDIA Jetson for edge computing.
-                </p>
-              </motion.div>
+
             </div>
           </Section>
 
