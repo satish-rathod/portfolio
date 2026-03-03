@@ -205,38 +205,58 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
+                  <a href="https://github.com/satish-rathod/flow" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                    Flow — Voice Interface for Claude Code
+                  </a>
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  Python, Textual, WebSocket, Claude Agent SDK | 2025
+                </p>
+                <p className="text-neutral-400">
+                  A hands-free voice interface for Claude Code with real-time speech-to-text, text-to-speech, and a state machine
+                  for managing conversation flow. Supports direct SDK mode and a WebSocket bridge for attaching to running CLI sessions.
+                  Voice intent parsing handles permission prompts, yes/no answers, and numbered option selection.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  <a href="https://github.com/satish-rathod/Scaler-Companion" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                    Scaler Companion
+                  </a>
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  FastAPI, React, Whisper, EasyOCR, Ollama, Chrome Extension | 2025
+                </p>
+                <p className="text-neutral-400">
+                  A three-component system for capturing and processing lecture recordings: a Chrome extension intercepts HLS streams
+                  from Scaler, a FastAPI backend transcribes audio with Whisper and extracts slides via OCR, and a React dashboard
+                  provides a searchable library with LLM-generated notes and PDF export.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  <a href="https://github.com/satish-rathod/simply_invest" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                    Simply Invest — AI Trading Platform
+                  </a>
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  MERN, OpenAI, OpenBB | 2024
+                </p>
+                <p className="text-neutral-400">
+                  A multi-tenant trading platform with AI-driven sentiment analysis, automated trading bots, backtesting,
+                  and real-time portfolio tracking. Uses OpenAI for market insights and OpenBB for financial data.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
                   Edge-AI Audio Analysis System
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
                   Jetson, Whisper, Hugging Face, Docker | 2024
                 </p>
                 <p className="text-neutral-400">
-                  Developed an edge-cloud AI pipeline for real-time audio processing and NLP with REST APIs deployed in Docker. 
-                  Implemented advanced audio transcription and analysis using NVIDIA Jetson for edge computing.
-                </p>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-100">
-                  Simply Invest - AI Trading Bot
-                </h3>
-                <p className="text-sm text-neutral-400 mb-4">
-                  MERN stack, OpenAI APIs | 2024
-                </p>
-                <p className="text-neutral-400">
-                  Built a trading bot using OpenAI APIs to help users make smart trading decisions through sentiment analysis. 
-                  Implemented real-time market data processing and intelligent trading recommendations.
-                </p>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-100">
-                  AI Receptionist (AI Chat-Bot)
-                </h3>
-                <p className="text-sm text-neutral-400 mb-4">
-                  MERN, SQLite, OpenAI APIs | 2024
-                </p>
-                <p className="text-neutral-400">
-                  Developed an AI-powered receptionist for hotel room booking through natural language conversations. 
-                  Integrated OpenAI APIs for intelligent conversation handling and booking management.
+                  An edge-cloud AI pipeline for real-time audio processing and NLP with REST APIs deployed in Docker.
+                  Implemented audio transcription and analysis using NVIDIA Jetson for edge computing.
                 </p>
               </motion.div>
             </div>
@@ -248,6 +268,7 @@ const App: React.FC = () => {
                 <h4 className="text-lg font-semibold text-neutral-100 mb-3">Programming Languages</h4>
                 <div className="flex flex-wrap -m-2">
                   <SkillBadge skill="Python" />
+                  <SkillBadge skill="TypeScript" />
                   <SkillBadge skill="Java" />
                   <SkillBadge skill="C++" />
                   <SkillBadge skill="JavaScript" />
@@ -275,9 +296,11 @@ const App: React.FC = () => {
                 <div className="flex flex-wrap -m-2">
                   <SkillBadge skill="Docker" />
                   <SkillBadge skill="REST APIs" />
+                  <SkillBadge skill="WebSocket" />
                   <SkillBadge skill="Linux" />
                   <SkillBadge skill="Git" />
                   <SkillBadge skill="React" />
+                  <SkillBadge skill="FastAPI" />
                   <SkillBadge skill="Express.js" />
                   <SkillBadge skill="Node.js" />
                   <SkillBadge skill="MongoDB" />
