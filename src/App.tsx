@@ -160,6 +160,18 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
+                  SWE Intern | Trackaroo
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  Remote | Feb 2026 – Present
+                </p>
+                <ul className="text-neutral-400 space-y-2">
+                  <li>• Building a multi-tenant automotive dealer ERP platform with Spring Boot, React + TypeScript, and PostgreSQL</li>
+                  <li>• Developing automation bots for vehicle registration (Playwright + FastAPI + Celery) and insurance processing (Puppeteer + RabbitMQ + OCR)</li>
+                </ul>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
                   AI-ML Intern | 1Pharmacy Networks
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
