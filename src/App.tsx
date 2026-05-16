@@ -118,7 +118,7 @@ const App: React.FC = () => {
           <Section title="About Me">
             <p className="leading-relaxed mb-4">
               Software engineer with experience across full-stack development, AI/ML pipelines, and automation systems.
-              Currently an SWE Intern at Trackaroo building a multi-tenant automotive dealer ERP, and pursuing dual
+              Currently a Backend Intern at <a href="https://emergent.sh" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">Emergent</a> working on the autonomous coding agent platform, and pursuing dual
               degrees in Computer Science from Scaler School of Technology and BITS Pilani.
             </p>
             <p className="leading-relaxed">
@@ -137,7 +137,7 @@ const App: React.FC = () => {
                   Bachelor + Masters of Science in Computer Science
                 </p>
                 <p className="text-sm text-neutral-400 mb-2">
-                  July 2023 – July 2027 | CGR: 8.1
+                  July 2023 – July 2027 | CGR: 8.0
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
@@ -158,10 +158,22 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  SWE Intern | Trackaroo
+                  Backend Intern | <a href="https://emergent.sh" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Emergent</a>
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
-                  Remote | Feb 2026 – Present
+                  On-site | Mar 2026 – Present
+                </p>
+                <ul className="text-neutral-400 space-y-2">
+                  <li>• Building backend services for Emergent's autonomous coding agent platform, which generates, tests, and deploys production applications from natural-language intent</li>
+                  <li>• Working on agent orchestration, sandboxing, and code-execution infrastructure powering the vibe-coding workflow used by 5M+ users across 190+ countries</li>
+                </ul>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-100">
+                  SWE Intern | <a href="https://www.trackaroo.in/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Trackaroo</a>
+                </h3>
+                <p className="text-sm text-neutral-400 mb-4">
+                  On-site | Feb 2026 – Mar 2026
                 </p>
                 <ul className="text-neutral-400 space-y-2">
                   <li>• Building a multi-tenant automotive dealer ERP with Spring Boot, React + TypeScript, and PostgreSQL</li>
@@ -171,7 +183,7 @@ const App: React.FC = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  AI-ML Intern | 1Pharmacy Networks
+                  AI-ML Intern | <a href="https://1pharmacy.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">1Pharmacy Networks</a>
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
                   On-site | Nov 2024 – May 2025
@@ -185,7 +197,7 @@ const App: React.FC = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-100">
-                  Full-Stack Intern | Bot9, Dukaan®
+                  Full-Stack Intern | Bot9, <a href="https://mydukaan.io" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Dukaan®</a>
                 </h3>
                 <p className="text-sm text-neutral-400 mb-4">
                   On-site | Aug 2024 – Oct 2024
